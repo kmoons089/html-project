@@ -1,0 +1,104 @@
+.homeScreen{
+    display: flex;
+    position: relative;
+  
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    width: 100%;
+  
+    font-size: 1rem;
+    top: -50px;
+}
+.homeScreen img{
+    width: 80vw;
+}
+.homeScreen2{
+    display: flex;
+    position: relative;
+  
+    align-items: center;
+    justify-content: center;
+    max-height: 120vh;
+    width: 100%;
+    
+    font-size: 1rem;
+    top: 5px;
+}
+.homeScreen2 img{
+    width: 30vw;
+}
+.homeScreen2 p{
+    text-align: center;
+}
+ .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 100px;
+    max-height: 400px;
+    min-height: 200px;
+   
+    align-items: center;
+    justify-content: center;
+    
+}
+.para h2{
+    text-align: center;
+}
+
+.para:nth-child(1){
+    padding: 20px;
+}
+.para:nth-child(3){
+    padding: 20px;
+}
+.para img{
+    object-fit: contain;
+}
+
+.homeScreen img:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    
+}
+.homeScreen img:nth-child(2){
+    top: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+}
+
+ 
+  @media only screen and (max-width: 536px) {
+    .homeScreen{
+        top: 0px;
+        
+    }
+    .grid{
+    grid-template-columns: auto;
+    gap: 5px;
+   
+    
+    }
+    .grid img{
+        max-height: 200px;
+    }
+    .para{
+        width: 100%;
+        height: 120px;
+    }
+    .homeScreen2 img{
+        width: 60vw;
+    }
+  }
